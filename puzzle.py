@@ -1,4 +1,6 @@
-'''Check whether the board given is suitable for the puzzle game'''
+'''Check whether the board given is suitable for the puzzle game
+Link to Github: https://github.com/Bohdanok/Milian-Bohdan-lab8-task2
+'''
 def validate_board(board:list)->bool:
     '''
     Checks for matche in the board and returns it's validity in bool type
