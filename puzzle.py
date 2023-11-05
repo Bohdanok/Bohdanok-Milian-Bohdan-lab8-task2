@@ -7,7 +7,7 @@ def validate_board(board:list)->bool:
 "     9 5 ", " 6  83  *", "3   0  **", "  8  2***", "  2  ****"])
     True
     '''
-    # Check colums
+    # Check colums for same numbers
     for i in range(9):
         memory_list=[]
         for j in range(9):
