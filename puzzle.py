@@ -23,6 +23,15 @@ def validate_board(board:list)->bool:
                 memory_list.append(j)
                 if j in  memory_list[:-1]:
                     return False
+    # Check colors
+    minus_colum=4
+    for i in range(5):
+        memory_list=[]
+        for colum in range(5):
+            if board[colum+minus_colum][i] !='*'and board[colum+minus_colum][i] !=' ':
+                memory_list.append(board[colum+minus_colum][i])
+                if board[colum+minus_colum][i] in memory_list[:-1]:
+                    return False
 if __name__=='__main__':
     import doctest
     print(doctest.testmod())
